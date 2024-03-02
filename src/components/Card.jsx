@@ -8,7 +8,7 @@ const Card = (props) => {
         console.warn("Discount and Original price not found");
     } else if (!props.discount) {
         console.warn("Discount not found");
-    } else if(props.priceOrginal){
+    } else if(!props.priceOrginal){
         console.warn("Original price not found");
     }
 
