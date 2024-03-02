@@ -7,8 +7,8 @@ const App = () => {
                 <Card
                     title="Apple Earbuds Pro Refurbished"
                     priceDiscounted={34999}
-                    // priceOrginal={59999}
-                    // discount={40}
+                    priceOrginal={59999}
+                    discount={40}
                 />
             </div>
         </>

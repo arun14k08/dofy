@@ -4,12 +4,12 @@ import CheckBox from "./CheckBox";
 import Discount from "./Discount";
 
 const Card = (props) => {
-    if (props.discount && !props.priceOrginal) {
-        console.warn("Original price not found");
-    } else if (!props.discount && props.priceOrginal) {
+    if (!props.discount && !props.priceOrginal) {
+        console.warn("Discount and Original price not found");
+    } else if (!props.discount) {
         console.warn("Discount not found");
-    } else if (!props.discount && !props.priceOrginal) {
-        console.warn("Original price and Discount not found");
+    } else if(props.priceOrginal){
+        console.warn("Original price not found");
     }
 
     return (
