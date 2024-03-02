@@ -24,14 +24,14 @@ const Card = (props) => {
                 </h3>
                 <div className="flex justify-between w-[226px]">
                     <p className="text-[20px] leadin-[18px] font-semibold">
-                        ₹{props.priceDiscounted}
+                        ₹{props.priceDiscounted.toLocaleString()}
                     </p>
 
                     {props.discount && (
                         <>
                             <p className="my-auto font-normal text-[16px] leading-[18px] text-[#22222266]">
                                 {props.priceOrginal && (
-                                    <s>₹{props.priceOrginal}</s>
+                                    <s>₹{props.priceOrginal.toLocaleString()}</s>
                                 )}
                             </p>
                             <Discount discount={props.discount} />
