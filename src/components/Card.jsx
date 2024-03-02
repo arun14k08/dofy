@@ -1,4 +1,4 @@
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import { appleBuds } from "../assets";
 import CheckBox from "./CheckBox";
 import Discount from "./Discount";
@@ -29,11 +29,11 @@ const Card = (props) => {
 };
 
 Card.propTypes = {
-    id: String,
-    title: String,
-    priceOrginal: Number,
-    priceDiscounted: Number,
-    discount: Number,
+    id: PropTypes.string,
+    title: PropTypes.string,
+    priceOrginal: PropTypes.number,
+    priceDiscounted: PropTypes.number,
+    discount: PropTypes.number,
 };
 Card.defaultProps = {
     id: "id",
