@@ -4,6 +4,14 @@ import CheckBox from "./CheckBox";
 import Discount from "./Discount";
 
 const Card = (props) => {
+    if (props.discount && !props.priceOrginal) {
+        console.warn("Original price not found");
+    } else if (!props.discount && props.priceOrginal) {
+        console.warn("Discount not found");
+    } else if (!props.discount && !props.priceOrginal) {
+        console.warn("Original price and Discount not found");
+    }
+
     return (
         <div className="flex flex-col justify-between w-[305px] h-[385px] border-2 border-[#EFEFEF] rounded-2xl relative overflow-hidden">
             <div className="w-full flex justify-center items-center bg-[#F5F5F5] h-[238px]">
@@ -18,10 +26,17 @@ const Card = (props) => {
                     <p className="text-[20px] leadin-[18px] font-semibold">
                         ₹{props.priceDiscounted}
                     </p>
-                    <p className="my-auto font-normal text-[16px] leading-[18px] text-[#22222266]">
-                        <s>₹{props.priceOrginal}</s>
-                    </p>
-                    <Discount discount={props.discount} />
+
+                    {props.discount && (
+                        <>
+                            <p className="my-auto font-normal text-[16px] leading-[18px] text-[#22222266]">
+                                {props.priceOrginal && (
+                                    <s>₹{props.priceOrginal}</s>
+                                )}
+                            </p>
+                            <Discount discount={props.discount} />
+                        </>
+                    )}
                 </div>
             </div>
         </div>
@@ -38,9 +53,7 @@ Card.propTypes = {
 Card.defaultProps = {
     id: "id",
     title: "TITLE",
-    priceOrginal: 100,
     priceDiscounted: 90,
-    discount: 10,
 };
 
 export default Card;
