@@ -4,13 +4,13 @@ import CheckBox from "./CheckBox";
 import Discount from "./Discount";
 
 const Card = (props) => {
-    if (!props.discount && !props.priceOrginal) {
-        console.warn("Discount and Original price not found");
-    } else if (!props.discount) {
-        console.warn("Discount not found");
-    } else if(!props.priceOrginal){
-        console.warn("Original price not found");
-    }
+    // if (!props.discount && !props.priceOrginal) {
+    //     console.warn("Discount and Original price not found");
+    // } else if (!props.discount) {
+    //     console.warn("Discount not found");
+    // } else if(!props.priceOrginal){
+    //     console.warn("Original price not found");
+    // }
 
     return (
         <div className="flex flex-col justify-between w-[305px] h-[385px] border-2 border-[#EFEFEF] rounded-2xl relative overflow-hidden">
