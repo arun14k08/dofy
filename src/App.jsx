@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import { Card } from "./components/index";
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
                     discount={40}
                 />
             </div>
+            <Footer/>
         </>
     );
 };
