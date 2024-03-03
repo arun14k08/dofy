@@ -4,5 +4,6 @@
 @tailwind utilities;
 
 * {
+    font-family: Figtree;
     /* border: 1px solid #aaa; */
 }
