@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { appleBuds } from "../assets";
 import CheckBox from "./CheckBox";
 import Discount from "./Discount";
+import CardTag from "./CardTag";
 
 const Card = (props) => {
     // if (!props.discount && !props.priceOrginal) {
@@ -15,6 +16,7 @@ const Card = (props) => {
     return (
         <div className="flex flex-col justify-between w-[305px] h-[385px] border-2 border-[#EFEFEF] rounded-2xl relative overflow-hidden">
             <div className="w-full flex justify-center items-center bg-[#F5F5F5] h-[238px]">
+                <CardTag />
                 <CheckBox />
                 <img src={appleBuds} alt="product" />
             </div>
