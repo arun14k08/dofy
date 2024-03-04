@@ -4,11 +4,11 @@
 @tailwind utilities;
 
 * {
-    font-family: Figtree;
-    /* border: 1px solid #aaa; */
+  font-family: Figtree;
+  border: 1px solid #aaa;
 }
 
 .static-border {
-    border: 2px solid #efefef;
-    border-radius: 1rem;
+  border: 2px solid #efefef;
+  border-radius: 1rem;
 }

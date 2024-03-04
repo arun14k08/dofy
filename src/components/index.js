@@ -1,6 +1,6 @@
-import Card from "./Card"
-import CardsContainer from "./CardsContainer";
-import Footer from "./Footer";
+import FAQ from "./FAQ";
+import Card from "./Card";
+import FAQtemplate from "./FAQtemplate";
 import InBoxContents from "./InBoxContents";
 import CardTag from "./CardTag";
 export {
