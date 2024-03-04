@@ -5,10 +5,10 @@ import { Card, FAQ, FAQtemplate, InBoxContents } from "./components/index";
 const App = () => {
   return (
     <>
-      <div className="w-full flex justify-center items-center">
+      <div className="w-full flex flex-col justify-center items-center">
         <CardsContainer />
-      </div>
       <InBoxContents />
+      </div>
       <FAQ />
       <Footer />
     </>
