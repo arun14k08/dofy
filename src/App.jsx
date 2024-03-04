@@ -1,12 +1,10 @@
-import CardsContainer from "./components/CardsContainer";
-import Footer from "./components/Footer";
-import { Card } from "./components/index";
-
+import { CardsContainer, InBoxContents, Footer } from "./components";
 const App = () => {
     return (
         <>
-            <div className="w-full flex justify-center items-center">
+            <div className="w-full flex flex-col justify-center items-center">
                 <CardsContainer />
+                <InBoxContents />
             </div>
             <Footer />
         </>
