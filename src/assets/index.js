@@ -8,7 +8,6 @@ import LinkedInIcon from "./LinkedInIcon.svg";
 import InstaIcons from "./InstaIcons.svg";
 import PlaystoreIcon from "./PlaystoreIcon.svg";
 import AppStoreIcon from "./AppStoreIcon.svg";
-import ONanswerKeyIcon from"./ONanswerKeyIcon.svg";
 
 export {
   appleBuds,
@@ -21,5 +20,4 @@ export {
   InstaIcons,
   PlaystoreIcon,
   AppStoreIcon,
-  ONanswerKeyIcon,
 };

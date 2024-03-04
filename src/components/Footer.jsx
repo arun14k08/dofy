@@ -1,17 +1,15 @@
 import React from "react";
-import {
-  facebook,
+import {  facebook,
   XsocialIcons,
   WhatsappIcons,
   YoutubeIcon,
   LinkedInIcon,
   InstaIcons,
   PlaystoreIcon,
-  AppStoreIcon,
-} from "../assets";
+  AppStoreIcon,} from "../assets"
 const Footer = () => {
   return (
-    <div className="Footer bg-[#EAEAEA] w-full h-[405px] px-[120px] py-[39px] flex justify-between mt-[140px]">
+    <div className="Footer bg-[#EAEAEA] w-full h-[405px] px-[120px] py-[39px] flex justify-between mt-[200px]">
       <div id="AboutContent">
         <h1 className=" font-bold text-[24px] leading-[28.8px] tracking-[4px]">
           DOFY

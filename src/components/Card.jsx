@@ -27,16 +27,40 @@ const Card = (props) => {
                         ₹{props.priceDiscounted.toLocaleString()}
                     </p>
 
-                    {props.discount && (
+                    {props.discount ? (
                         <>
                             <p className="my-auto font-normal text-[16px] leading-[18px] text-[#22222266]">
                                 {props.priceOrginal && (
-                                    <s>₹{props.priceOrginal.toLocaleString()}</s>
+                                    <s>
+                                        ₹{props.priceOrginal.toLocaleString()}
+                                    </s>
                                 )}
                             </p>
                             <Discount discount={props.discount} />
                         </>
+                    ) : (
+                        props.priceOrginal && (
+                            <>
+                                <p className="my-auto font-normal text-[16px] leading-[18px] text-[#22222266]">
+                                    <s>
+                                        ₹{props.priceOrginal.toLocaleString()}
+                                    </s>
+                                </p>
+                            </>
+                        )
                     )}
+
+                    {/* // 
+                    //     <>
+                    //         <p className="my-auto font-normal text-[16px] leading-[18px] text-[#22222266]">
+                    //             {props.priceOrginal && (
+                    //                 <s>₹{props.priceOrginal.toLocaleString()}</s>
+                    //             )}
+                    //         </p>
+                    //         <Discount discount={props.discount} />
+                    //     </>
+                    // )
+                 */}
                 </div>
             </div>
         </div>
