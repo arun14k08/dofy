@@ -11,6 +11,7 @@ import AppStoreIcon from "./AppStoreIcon.svg";
 import ONanswerKeyIcon from "./ONanswerKeyIcon.svg";
 import ellipse from "./Ellipse.svg";
 import mobileBox from "./Mobilebox.svg";
+import OffAnswerKeyIcon from "./OffAnswerKeyIcon.svg";
 
 export {
   appleBuds,
@@ -26,4 +27,5 @@ export {
   ellipse,
   mobileBox,
   ONanswerKeyIcon,
+  OffAnswerKeyIcon,
 };
