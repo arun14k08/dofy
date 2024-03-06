@@ -1,6 +1,6 @@
 import CardsContainer from "./components/CardsContainer";
 import Footer from "./components/Footer";
-import { FAQ, InBoxContents } from "./components/index";
+import { Button, FAQ, InBoxContents } from "./components/index";
 
 const App = () => {
     return (
@@ -9,7 +9,10 @@ const App = () => {
                 <CardsContainer title={"Add-ons"} />
                 <InBoxContents />
                 <FAQ />
-                <CardsContainer fullWidth={true} title={"Similar deals"} />
+                <div className="flex flex-col items-center">
+                    <CardsContainer fullWidth={true} title={"Similar deals"} />
+                    <Button />
+                </div>
             </div>
             <Footer />
         </>
