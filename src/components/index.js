@@ -5,6 +5,7 @@ import InBoxContents from "./InBoxContents";
 import CardTag from "./CardTag";
 import CardsContainer from "./CardsContainer";
 import Footer from "./Footer";
+import Button from "./Button";
 export {
     Card,
     CardsContainer,
@@ -13,4 +14,5 @@ export {
     FAQtemplate,
     InBoxContents,
     CardTag,
+    Button,
 }
