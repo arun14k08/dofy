@@ -15,7 +15,7 @@ const FAQtemplate = () => {
     return (
         <>
             <div
-                className={`Template flex gap-[107px] border-solid rounded-[12px] p-5 shadow-md shadow-[#EFEFEF] border-[#EFEFEF] transition-all duration-500
+                className={`Template flex gap-[107px] border-solid rounded-[12px] p-5 shadow-md shadow-[#EFEFEF] border-[#EFEFEF] transition-all duration-500 cursor-pointer
                 ${toggleFAQ ? "h-[200px]" : "h-[75px]"}`}
                 onClick={toggleHandler}
             >
@@ -25,7 +25,7 @@ const FAQtemplate = () => {
                             1.Difference between second hand mobile &
                             refurbished mobile?
                         </p>
-                        <div className="AnswerKey w-6 h-6 flex justify-center items-center ml-auto mr-4 cursor-pointer">
+                        <div className="AnswerKey w-6 h-6 flex justify-center items-center ml-auto mr-4">
                             <img
                                 src={
                                     toggleFAQ
