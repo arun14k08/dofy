@@ -14,9 +14,9 @@ const Card = (props) => {
     // }
 
     return (
-        <div className="flex flex-col justify-between w-[305px] h-[385px] border-2 border-[#EFEFEF] rounded-2xl relative overflow-hidden">
-            <div className="w-full flex justify-center items-center bg-[#F5F5F5] h-[238px]">
-                <CardTag />
+        <div className="flex flex-col justify-between w-[305px] h-[385px] border-2 border-[#EFEFEF] rounded-2xl relative ">
+            <div className="w-full flex justify-center items-center bg-[#F5F5F5] h-[238px] border-[#EFEFEF] rounded-[14px] rounded-b-none">
+                {props.needTag ? <CardTag /> : ""}
                 <CheckBox />
                 <img src={appleBuds} alt="product" />
             </div>
@@ -75,11 +75,13 @@ Card.propTypes = {
     priceOrginal: PropTypes.number,
     priceDiscounted: PropTypes.number,
     discount: PropTypes.number,
+    needTag: PropTypes.bool,
 };
 Card.defaultProps = {
     id: "id",
     title: "TITLE",
     priceDiscounted: 90,
+    needTag: false,
 };
 
 export default Card;

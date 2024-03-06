@@ -8,6 +8,10 @@
     /* border: 1px solid #aaa; */
 }
 
+.card-tag-gradient {
+    background: linear-gradient(264.45deg, #1e54c9 9.09%, #00a7e7 94.5%);
+}
+
 .static-border {
     border: 2px solid #efefef;
     border-radius: 1rem;
